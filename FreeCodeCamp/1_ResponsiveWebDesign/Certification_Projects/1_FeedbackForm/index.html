@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feedback Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <div id="header">
+            <h1 id="title">MFA Feedback Form</h1>
+            <p id="description">Help me improve by giving some honest feedback!</p>
+            </div>
+            <form id="survey-form" action="https://survey-form.freecodecamp.rocks/">
+                <fieldset>
+                    <label class="heading"  id="name-label" for="name">Who are you? <input type="text" id="name" required placeholder=" Name"></label>
+                    <label class="heading"  id="email-label" for="email">What is your email? <input type="email" id="email" required placeholder=" caspermartin@mfa.com"></label>
+                    <label class="heading"  id="number-label" for="number">How old are you? (Optional) <input type="number" id="number" min="18" max="100" placeholder=" Age (18-100)"></label>
+                    <label class="heading"  for="dropdown">What is your Programming Language of choice? 
+                        <select id="dropdown">
+                            <option value="0">None</option>
+                            <option value="1">C#</option>
+                            <option value="2">C++</option>
+                            <option value="3">Javascript</option>
+                            <option value="4">Java</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                        <legend class="heading" >How would you rate my portfolio? (Required)</legend>
+                        <label for="radio-belowaverage"><input class="inline" value="below-average" name="rating" type="radio" id="radio-belowaverage">Below Average</label>
+                        <label for="radio-average"><input class="inline" value="average" checked name="rating" type="radio" id="radio-average">Average</label>
+                        <label for="radio-good"><input class="inline" value="good" name="rating" type="radio" id="radio-good">Good</label>
+                        <label for="radio-excellent"><input class="inline" value="excellent" name="rating" type="radio" id="radio-excellent">Excellent</label>
+                </fieldset>
+                <fieldset>
+                    <legend class="heading" >What could be improved?</legend>
+                    <label for="checkbox-design"><input class="inline" name="improvements" value="design" type="checkbox" id="checkbox-design">Website Design</label>
+                    <label for="checkbox-menu"><input class="inline" name="improvements" value="menu" type="checkbox" id="checkbox-menu">Website Menu</label>
+                    <label for="checkbox-explanations"><input class="inline" name="improvements" value="explanations" type="checkbox" id="checkbox-explanations">Better Project Explanations</label>
+                    <label for="checkbox-exercises"><input class="inline" name="improvements" value="exercises" type="checkbox" id="checkbox-exercises">More Exercises</label>
+                    <label for="checkbox-structure"><input class="inline" name="improvements" value="structure" type="checkbox" id="checkbox-structure">HTML Structure</label>
+                    <label for="checkbox-seo"><input class="inline" name="improvements" value="seo" type="checkbox" id="checkbox-seo">SEO Enhancing Techniques</label>
+                </fieldset>
+                <fieldset>
+                    <label class="heading" for="extra-feedback">Any other feedback?<textarea id="extra-feedback" placeholder="Please provide additional feedback..."></textarea></label>
+                </fieldset>
+                <input type="submit" id="submit"></input>
+            </form>
+        </main>
+    </body>
+</html>

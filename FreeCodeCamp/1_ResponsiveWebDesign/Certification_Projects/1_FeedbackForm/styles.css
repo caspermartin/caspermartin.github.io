@@ -1,0 +1,78 @@
+/*ELEMENTS*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gainsboro;
+}
+
+fieldset{
+    border: none;
+}
+
+form {
+    background-color: rgb(0, 0, 0,0.7);
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    margin:0 auto;
+    color:gainsboro;
+    min-width: 400px;
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input, textarea, select {
+    margin: 10px 0 0 0;
+    padding:0;
+    width: 100%;
+    min-height: 2em;
+    border: none;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    padding: 5px 0;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2.5em;
+    font-size: 1.1rem;
+    background-color: white;
+    min-width: 300px;
+    border-radius: 20px;
+  }
+
+/*ID's*/
+#title, #description {
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+}
+
+#description {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+
+/*CLASSES*/
+
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.heading{
+    font-weight: bold;
+}
