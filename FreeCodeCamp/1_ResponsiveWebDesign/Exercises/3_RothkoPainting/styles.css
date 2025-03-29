@@ -49,10 +49,16 @@
     filter:blur(1px)
 }
 
-img {
-    margin: auto 20px;
+.example{
+    width: 100%;
+}
+
+.center {
+    margin: 20px auto;
+    display: block;
 }
 
 h1{
-    margin: auto 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
